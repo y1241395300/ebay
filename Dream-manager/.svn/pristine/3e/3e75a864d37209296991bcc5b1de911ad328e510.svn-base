@@ -1,0 +1,36 @@
+package cn.e3mall.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+
+import cn.e3mall.mapper.TbItemMapper;
+import cn.e3mall.pojo.TbItem;
+import cn.e3mall.pojo.TbItemExample;
+import cn.e3mall.service.ItemService;
+import cn.e3mall.utils.EasyUIResult;
+@Service
+public class ItemServiceImpl implements ItemService {
+	@Autowired
+	private TbItemMapper itemMapper;
+	
+	public TbItem findTbItemById(Long id){
+		TbItem tbItem = itemMapper.selectByPrimaryKey(id);
+		return tbItem;
+	}
+	public EasyUIResult findTbItemPage(Integer page,Integer row){
+		TbItemExample example = new TbItemExample();
+		PageHelper.startPage(page, row);
+		List<TbItem> list = itemMapper.selectByExample(example);
+		PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+		long total = pageInfo.getTotal();
+		EasyUIResult result = new EasyUIResult();
+		result.setRows(list);
+		result.setTotal(total);
+		return result;
+	}
+}

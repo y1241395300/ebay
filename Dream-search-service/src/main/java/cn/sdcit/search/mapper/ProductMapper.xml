@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.sdcit.search.mapper.ItemMapper" >
+ 	<select id="getItemList" resultType="cn.sdcit.pojo.SearchItem">
+ 		SELECT
+			product.id,
+			product.title,
+			product.sell_point,
+			product.price,
+			product.image,
+			product_name category_name
+		FROM
+			product
+		LEFT JOIN product_cat cat ON prduct.cid = prduct_cat.id
+		WHERE
+			prduct.status=1
+ 	</select>
+ 	
+ 	<select id="getItemById" parameterType="long" resultType="cn.sdcit.pojo.SearchItem">
+ 		SELECT
+			product.id,
+			product.title,
+			product.sell_point,
+			product.price,
+			product.image,
+			product_cat.name,
+		FROM
+			product 
+		LEFT JOIN product_cat cat ON product.cid = product_cat.id
+		WHERE
+			product.status = 1
+		AND
+			product.id = #{productId}
+ 	</select>
+</mapper>

@@ -1,0 +1,5 @@
+cn\sdcit\search\actionmq\MyActionMQListener.class
+cn\sdcit\search\service\impl\SearchProductServiceImpl.class
+cn\sdcit\search\dao\SearchDao.class
+cn\sdcit\search\mapper\ProductMapper.class
+cn\sdcit\search\actionmq\ProductChangeTopicListener.class

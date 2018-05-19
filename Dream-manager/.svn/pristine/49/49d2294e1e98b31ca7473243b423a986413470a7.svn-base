@@ -1,0 +1,9 @@
+package cn.e3mall.service;
+
+import cn.e3mall.pojo.TbItem;
+import cn.e3mall.utils.EasyUIResult;
+
+public interface ItemService {
+	public TbItem findTbItemById(Long id );
+	public EasyUIResult findTbItemPage(Integer page,Integer row);
+}
