@@ -7,12 +7,6 @@
         <dependent-module archiveName="Dream-product-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Dream-product-interface/Dream-product-interface">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="Dream-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Dream-manager-pojo/Dream-manager-pojo">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="Dream-manager-dao-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Dream-manager-dao/Dream-manager-dao">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="Dream-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Dream-common/Dream-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
