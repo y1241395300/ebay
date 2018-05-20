@@ -1,4 +1,4 @@
-package cn.sdcit.ebay.service.impl;
+package cn.sdcit.ebay.service;
 
 import com.ebay.sdk.ApiAccount;
 import com.ebay.sdk.ApiContext;

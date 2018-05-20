@@ -1,0 +1,6 @@
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-parent/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1117 http-bio-8081-exec-1 29
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-sso-interface/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1131 http-bio-8081-exec-3 3
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-sso/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1111 http-bio-8081-exec-5 1
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-manager-pojo/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1129 http-bio-8081-exec-7 1
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-manager/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1119 http-bio-8081-exec-9 1
+127.0.0.1 - - [20/May/2018:16:08:23 +0800] "GET /nexus/content/groups/public/cn/sdcit/Dream-common/0.0.1-SNAPSHOT/maven-metadata.xml HTTP/1.1" 404 1117 http-bio-8081-exec-1 1

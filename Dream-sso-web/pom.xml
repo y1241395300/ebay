@@ -103,11 +103,11 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
-				<url>http://10.99.4.61:8082/manager/text</url>
+				<url>http://10.99.4.61:8083/manager/text</url>
 					<path>/</path>
 						<username>tomcat</username>
 					<password>tomcat</password>				
-					<port>8082</port>
+					<port>8083</port>
 				</configuration>
 			</plugin>
 		</plugins>
