@@ -5,9 +5,8 @@ import java.io.Serializable;
 public class SearchProduct implements Serializable {
 	private String id;
 	private String title;
-	private String sell_point;
-	private long price;
-	private String image;
+	private float price;
+	private String images;
 	private String category_name;
 
 	public String getId() {
@@ -25,29 +24,20 @@ public class SearchProduct implements Serializable {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
-	public String getSell_point() {
-		return sell_point;
-	}
-
-	public void setSell_point(String sell_point) {
-		this.sell_point = sell_point;
-	}
-
-	public long getPrice() {
+	public float getPrice() {
 		return price;
 	}
 
-	public void setPrice(long price) {
-		this.price = price;
+	public void setPrice(float f) {
+		this.price = f;
 	}
 
-	public String getImage() {
-		return image;
+	public String getimages() {
+		return images;
 	}
 
-	public void setImage(String image) {
-		this.image = image;
+	public void setimages(String images) {
+		this.images = images;
 	}
 
 	public String getCategory_name() {
@@ -58,10 +48,19 @@ public class SearchProduct implements Serializable {
 		this.category_name = category_name;
 	}
 
-	public String[] getimages() {
-		String[] split = image.split(",");
-
-		return split;
+	public String[] getimagess() {
+		if(images!=null){
+			String[] split = images.split(",");
+			return split;
+		}
+		else{
+			String[] split = null;
+			split[0]="aaa";
+			return split;
+		}
+		
+			
+	
 
 	}
 

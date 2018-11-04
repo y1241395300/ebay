@@ -53,12 +53,18 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- 日志处理 
+		<!-- 日志处理 -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
+	   <exclusions>
+    <exclusion>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+    </exclusion>
+</exclusions> 
 		</dependency>
-		-->
+	
 		
 		<dependency>
 			<groupId>fastdfs_client</groupId>
